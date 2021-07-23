@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Video from './Video';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // BEM naming convention
+    <div className="app">
+      <h1>Lets build a FULL STACK MERN tik tok clone</h1>
+
+      <div className="app__videos">
+        <Video />
+        <Video />
+      </div>
+      {/* app container */}
+      {/* videos */}
     </div>
   );
 }
